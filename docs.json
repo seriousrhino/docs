@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Oryx Browser",
-  "description": "Oryx Browser",
+  "description": "The first agentic browser on Solana. Command your web—trade, automate, and browse with AI.",
   "colors": {
     "primary": "#7D56FC",
     "light": "#7D56FC",
