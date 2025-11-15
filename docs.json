@@ -2,68 +2,57 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Oryx Browser",
+  "description": "Oryx Browser",
   "colors": {
     "primary": "#7D56FC",
-    "light": "#F2F2F2",
-    "dark": "#1D1D1D"
+    "light": "#7D56FC",
+    "dark": "#7D56FC"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
+            "pages": ["index", "onboarding"]
+          },
+          {
+            "group": "AI & Automation",
+            "expanded": true,
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "llm-setup-guide",
+              {
+                "group": "Cloud AI Providers",
+                "expanded": true,
+                "pages": [
+                  "bring-your-own-keys/gemini",
+                  "bring-your-own-keys/claude",
+                  "bring-your-own-keys/openai",
+                  "bring-your-own-keys/openrouter"
+                ]
+              },
+              {
+                "group": "Local AI Models",
+                "expanded": true,
+                "pages": [
+                  "local-LLMs/ollama",
+                  "local-LLMs/lm-studio",
+                  "local-LLMs/gpt-oss"
+                ]
+              },
+              {
+                "group": "MCP Integration",
+                "expanded": false,
+                "tag": "Coming Soon"
+              }
             ]
           },
           {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
+            "group": "$ORYX Token",
+            "tag": "Soon",
+            "pages": ["oryx-token/overview"]
           }
         ]
       }
@@ -71,14 +60,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
+          "anchor": "Twitter",
           "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "icon": "square-x-twitter"
         },
         {
-          "anchor": "Blog",
+          "anchor": "Telegram",
           "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "icon": "telegram"
         }
       ]
     }
@@ -87,36 +76,42 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "background": {
+    "decoration": "windows",
+    "color": {
+      "light": "#F2F2F2",
+      "dark": "#121212"
+    }
+  },
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Buy $ORYX",
         "href": "mailto:hi@mintlify.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Download Oryx",
       "href": "https://dashboard.mintlify.com"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "telegram": "https://linkedin.com/company/mintlify"
     }
   }
 }
