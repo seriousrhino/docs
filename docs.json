@@ -87,13 +87,13 @@
     "links": [
       {
         "label": "Buy $ORYX",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://oryxai.io"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Download Oryx",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://oryxai.io"
     }
   },
   "contextual": {
@@ -110,8 +110,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "telegram": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/OryxBrowser",
+      "telegram": "https://t.me/Oryx_Portal"
     }
   }
 }
